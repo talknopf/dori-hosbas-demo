@@ -1,0 +1,116 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>דורי הוסבאס</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@500;700;900&family=Assistant:wght@400;600;700&display=swap">
+<style>
+/* Layout: RTL editorial — oversized name hero, numbered-free sections on a narrow measure, one ink band for the quote */
+:root{
+  --bg:#f3f2ee; --surface:#e8e6df; --fg:#1d2321; --muted:#5d6661; --accent:#9a6b2f; --ink:#1f2b27; --on-ink:#efe9dc; --line:#d3d0c6;
+  --display:"Frank Ruhl Libre", "David", Georgia, serif;
+  --body:"Assistant", "Arial Hebrew", Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#141917; --surface:#1c2320; --fg:#e9e6dd; --muted:#9aa49e; --accent:#d4a160; --ink:#0d1110; --on-ink:#efe9dc; --line:#2b3430; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#141917; --surface:#1c2320; --fg:#e9e6dd; --muted:#9aa49e; --accent:#d4a160; --ink:#0d1110; --on-ink:#efe9dc; --line:#2b3430; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:1.0625rem;line-height:1.7;direction:rtl;text-align:right}
+.wrap{max-width:1080px;margin:0 auto;padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px))}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;padding-block:22px;gap:16px;flex-wrap:wrap}
+.mark{font-family:var(--display);font-weight:900;font-size:1.35rem;letter-spacing:-.01em}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+nav a{color:var(--muted);text-decoration:none;font-weight:600;font-size:.95rem}
+nav a:hover,nav a:focus-visible{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.hero .wrap{padding-block:56px 72px;display:grid;grid-template-columns:1.4fr 1fr;gap:48px;align-items:end}
+.eyebrow{font-size:.8rem;letter-spacing:.14em;color:var(--accent);font-weight:700}
+h1{font-family:var(--display);font-weight:900;font-size:clamp(3.4rem,11vw,8.5rem);line-height:.92;margin:.2em 0 .25em;letter-spacing:-.02em;text-wrap:balance}
+h1 span{display:block;color:var(--accent)}
+.lede{font-size:1.25rem;max-width:34ch;color:var(--fg);margin:0}
+.portrait{aspect-ratio:4/5;max-width:100%;background:var(--surface);border:1px solid var(--line);display:grid;place-items:center;position:relative;overflow:hidden}
+.portrait::after{content:"ד.ה";font-family:var(--display);font-weight:900;font-size:7rem;color:var(--line)}
+.portrait small{position:absolute;bottom:12px;inset-inline:12px;color:var(--muted);font-size:.8rem;text-align:center}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-block;padding:12px 22px;font-weight:700;text-decoration:none;border:1.5px solid var(--fg);color:var(--fg)}
+.btn.primary{background:var(--fg);color:var(--bg)}
+.btn:hover{border-color:var(--accent)}
+section{border-top:1px solid var(--line)}
+section .wrap{padding-block:64px;display:grid;grid-template-columns:220px 1fr;gap:40px}
+h2{font-family:var(--display);font-weight:700;font-size:2rem;margin:0;line-height:1.1}
+.body p{max-width:62ch;margin:0 0 1em}
+.ph{background:color-mix(in srgb,var(--accent) 14%,transparent);padding:0 .25em;border-radius:2px}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.services h3{font-family:var(--display);font-size:1.3rem;margin:0 0 .3em}
+.services p{margin:0;color:var(--muted)}
+.services div{border-top:2px solid var(--accent);padding-top:14px}
+.timeline{list-style:none;margin:0;padding:0;display:grid;gap:18px}
+.timeline li{display:grid;grid-template-columns:110px 1fr;gap:20px}
+.timeline b{font-variant-numeric:tabular-nums;color:var(--accent)}
+.quote{background:var(--ink);color:var(--on-ink);border:0}
+.quote .wrap{display:block;padding-block:80px}
+.quote blockquote{font-family:var(--display);font-size:clamp(1.6rem,4vw,2.6rem);line-height:1.3;margin:0;max-width:24ch;text-wrap:balance}
+.quote cite{display:block;margin-top:18px;font-style:normal;opacity:.7;font-size:1rem;font-family:var(--body)}
+.contact dl{display:grid;grid-template-columns:auto 1fr;gap:10px 24px;margin:0}
+.contact dt{color:var(--muted);font-size:.85rem;letter-spacing:.08em}
+.contact dd{margin:0;font-weight:600;direction:ltr;text-align:right}
+form{display:grid;gap:12px;margin-top:28px;max-width:520px}
+input,textarea{font:inherit;padding:12px;border:1px solid var(--line);background:var(--bg);color:var(--fg)}
+button{font:inherit;font-weight:700;padding:12px;background:var(--fg);color:var(--bg);border:0;cursor:pointer}
+#sent{color:var(--accent);font-weight:700}
+footer .wrap{padding-block:28px;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line)}
+@media (max-width:760px){
+  .hero .wrap,section .wrap{grid-template-columns:1fr;gap:24px}
+  .services{grid-template-columns:1fr}
+  .portrait{max-width:280px}
+  .timeline li{grid-template-columns:80px 1fr}
+}
+@media (prefers-reduced-motion:no-preference){h1{animation:rise .8s ease-out both}@keyframes rise{from{transform:translateY(12px)}to{transform:none}}}
+</style>
+
+<nav><div class="wrap"><div class="mark">דורי הוסבאס</div>
+<ul><li><a href="#about">אודות</a></li><li><a href="#services">תחומים</a></li><li><a href="#path">דרך</a></li><li><a href="#contact">צור קשר</a></li></ul></div></nav>
+
+<header class="hero"><div class="wrap">
+  <div>
+    <div class="eyebrow"><span class="ph">[תחום עיסוק]</span> · ישראל</div>
+    <h1>דורי<span>הוסבאס</span></h1>
+    <p class="lede">מלווה אנשים וארגונים מהרעיון ועד הביצוע, עם ניסיון מעשי, יחס אישי ותוצאות שאפשר למדוד.</p>
+    <div class="btns"><a class="btn primary" href="#contact">לתיאום שיחה</a><a class="btn" href="#services">מה אני עושה</a></div>
+  </div>
+  <div class="portrait" role="img" aria-label="מקום לתמונת פרופיל"><small>כאן תיכנס תמונה</small></div>
+</div></header>
+
+<section id="about"><div class="wrap"><h2>אודות</h2>
+<div class="body">
+<p>דורי הוסבאס הוא <span class="ph">[תפקיד / מקצוע]</span> עם <span class="ph">[X]</span> שנות ניסיון ב<span class="ph">[תחום]</span>. לאורך הדרך עבד עם <span class="ph">[סוגי לקוחות / חברות]</span> והביא לכל פרויקט שילוב של הבנה מקצועית עמוקה וגישה ישירה.</p>
+<p>העבודה מתחילה בהקשבה: להבין מה באמת צריך לקרות, ואז לבנות תוכנית פשוטה, ברורה ומדויקת שמובילה לשם.</p>
+</div></div></section>
+
+<section id="services"><div class="wrap"><h2>תחומים</h2>
+<div class="services">
+  <div><h3>ייעוץ ואסטרטגיה</h3><p>מיפוי המצב הקיים, הגדרת יעדים ובניית מפת דרכים מעשית.</p></div>
+  <div><h3>ליווי וביצוע</h3><p>עבודה צמודה לאורך הדרך, כולל החלטות בזמן אמת ותיקוני מסלול.</p></div>
+  <div><h3>הדרכה וסדנאות</h3><p>העברת ידע לצוותים כך שהיכולת נשארת בבית גם אחרי הפרויקט.</p></div>
+</div></div></section>
+
+<section id="path"><div class="wrap"><h2>הדרך</h2>
+<ol class="timeline">
+  <li><b>2024–היום</b><span><span class="ph">[תפקיד נוכחי]</span>, <span class="ph">[חברה / עצמאי]</span></span></li>
+  <li><b>2018–2024</b><span><span class="ph">[תפקיד קודם]</span>, <span class="ph">[חברה]</span></span></li>
+  <li><b>2014–2018</b><span><span class="ph">[לימודים / תפקיד ראשון]</span></span></li>
+</ol></div></section>
+
+<section class="quote"><div class="wrap">
+<blockquote>„הדרך הטובה ביותר להתקדם היא להתחיל, ולשאול את השאלות הנכונות בדרך.”</blockquote>
+<cite>דורי הוסבאס</cite></div></section>
+
+<section id="contact" class="contact"><div class="wrap"><h2>צור קשר</h2>
+<div>
+<dl><dt>טלפון</dt><dd>050-000-0000</dd><dt>אימייל</dt><dd>dori@example.com</dd><dt>לינקדאין</dt><dd>linkedin.com/in/…</dd></dl>
+<form id="f"><input id="n" placeholder="שם מלא" required><input id="e" type="email" placeholder="אימייל" required><textarea id="m" rows="4" placeholder="במה אפשר לעזור?"></textarea><button type="submit">שליחה</button><div id="sent" hidden>תודה! הפרטים נקלטו בדף (טופס הדגמה, לא נשלח בפועל).</div></form>
+</div></div></section>
+
+<footer><div class="wrap">© 2026 דורי הוסבאס</div></footer>
+<script>document.getElementById('f').addEventListener('submit',e=>{e.preventDefault();document.getElementById('sent').hidden=false;});</script>
+
+</body></html>
